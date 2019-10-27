@@ -1,0 +1,143 @@
+* {
+    /* 전체선택자 */
+}
+
+div {
+    /* tag 선택자 
+    태그이름{
+    }
+    */
+}
+
+.className {
+    /* class 선택자 */
+    /* HTML class 속성의 값으로 선택 */
+}
+
+#idName {
+    /* id 선택자 */
+    /* HTML id속성의 값으로 선택 */
+}
+
+div#id.class {
+    /* 복합 선택자 */
+    /* 선택자를 '붙여서'정의, 붙여진 것들이 다 만족하는것만 선택*/
+}
+
+ul>.className {
+    /* 자식 선택자 */
+    /* S1>S2, S1에 바로 아래에 있는(자식) S2를 선택 */
+}
+
+div .something {
+    /* 후손 선택자 */
+    /* S1 S2, A의 하위에 있는 모든 태그중 S2를 선택. */
+}
+
+.some+li {
+    /* 인접 형제 선택자*/
+    /* S1 + S2, S1에 인접한(다음) S2를 가진 형제하나를 선택 */
+    /* selector.html */
+}
+
+.some~li {
+    /* 일반 형제 선택자*/
+    /* S1 ~ S2, S1에 다음 형제들중 S2를가진 애들을 선택 */
+    /* selector.html */
+}
+
+/* --------------------------가상 클래스 선택자------------------------------------- */
+.some:hover {
+    /* S1:hover, S1에 마우스 포인터가 올라가 있는 동안에만 스타일 적용  */
+    /* selector.html */
+}
+
+.some:active {
+    /* S1:active, S1에 클릭하는 동안 스타일 적용  */
+    /* selector.html */
+}
+
+.some:focus {
+    /* 대화형컨텐츠에 적용가능 */
+    /* S1:focus, S1가 포커스 되어있는 동안 스타일 적용  */
+    /* selector.html */
+}
+
+.some:first-child {
+    /* S1:first-child */
+    /* S1 형제요소 중 첫번째 요소 선택 */
+    /* selector.html */
+}
+
+.some:last-child {
+    /* S1:last-child */
+    /* S1 형제요소 중 마지막 요소 선택 */
+}
+
+.some:nth-child(n) {
+    /* S: :nth-child( an+b ) */
+    /* 형제 요소 중에서 특정 순서에 있는 요소를 선택 */
+    /* a와 b는 정수입니다. 0과 음수도 가능합니다.
+    /* n에는 음이 아닌 정수, 즉 0, 1, 2, 3, …이 차례대로 대입됩니다. */
+    /* an+b 대신에 even, odd를 넣을 수도 있습니다.*/
+    /* .some: nth-child(2n) 짝수만 선택 */
+    /* selector.html */
+}
+
+.some:nth-last-child(n) {
+    /* 위에꺼에 적용되는 형제 순서 반대 */
+}
+
+.some:nth-of-type() {
+    /* S:nth-of-type */
+    /* S와 동일한 형제 요소중 S가 n번째 요소라면 선택 */
+
+}
+
+.some:not(h1) {
+    /* S1:not(S2) */
+    /* S1인것 들중 S2가 아닌것 */
+    /* selector.html */
+}
+
+/* ------------------------------가상요소 선택자---------------------------------- */
+.some::before {
+    /* S::before */
+    /* S 내부의 앞에,내용을 삽입하여 스타일 적용 */
+    /* selector.html */
+}
+
+.some::after {
+    /* S::after */
+    /* S 내부의 뒤에,내용을 삽입하여 스타일 적용 */
+    /* content: url("이미지경로") */
+}
+
+/* --------------------------------속성 선택자 ------------------------------------ */
+/* https://www.w3schools.com/css/css_attribute_selectors.asp */
+[attr] {
+    /* attr 속성을 가진 요소 선택 */
+}
+
+[attr|=value] {
+    /*attr 속성에 특정한 value가 있을 경우 선택*/
+    /* value가 온전하게 단어로 구분되어야함. */
+    /* btnSuccess인데 btn으로 구분 불가 */
+    /* attr.html */
+}
+
+[attr^=value] {
+    /*attr 속성에 특정한 value가 있을 경우 선택*/
+    /* 위에 꺼랑 차이점은 온전한 단어가 아니라도 된다는거임 */
+    /* attr.html */
+}
+
+[attr$=value] {
+    /*attr 속성의 값이 value로 끝나는 요소 선택*/
+    /* 이것도 ^과 마찬가지로 온전한 단어가 아니라도 됨 */
+}
+
+[attr*=value] {
+    /*attr 속성에 값에 value가 포함 되어있다면 선택*/
+    /* 온전한 단어 아니라도 됨 */
+}

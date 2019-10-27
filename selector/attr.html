@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* input[disabled] {
+            opacity: 0.2;
+        } */
+        /* input[type="password"]:hover {
+            outline: none;
+            border: 1px solid orange;
+        } */
+        [class^="btn"] {
+            font-weight: bold;
+            border-radius: 20px;
+        }
+        [class|="btn"] {
+            font-weight: bold;
+            color: orange;
+            border-radius: 20px;
+        }
+        [class$="success"] {
+            font-weight: bold;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" value="nomal">
+    <input type="password" value="passward">
+    <input type="text" value="disabled" disabled>
+    <div>
+        <button class="btnSuccess">Success</button>
+        <button class="btn-danger">Danger</button>
+        <button class="btn">Normal</button>
+    </div>
+</body>
+
+</html>
