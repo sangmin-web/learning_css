@@ -19,3 +19,10 @@ Learning CSS
 
 * ~vw vh vmax vmin~
     * view-port에 맞춰서 크기 조정 vmax는 가로 세로중 큰걸로, vmin은 가로 세로중 작은걸로
+
+* ~margin~
+    * margin 중복
+
+* ~padding~
+    * padding 크기 추가
+
