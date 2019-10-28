@@ -11,6 +11,8 @@ Learning CSS
     * [Pseudo-elements] (https://www.w3schools.com/css/css_pseudo_elements.asp)
     * [Attribute_Selectors] (https://www.w3schools.com/css/css_attribute_selectors.asp)
 
-    
 * ~상속~
-    * 상속이 안되는 속성 값에 inherit을 입력하면 부모 요소에 적용되어있는 속성 값을 상속.
+    * 상속이 안되는 속성 값에 inherit을 입력하면 부모 요소에 적용되어있는 속성 값을 상속.    
+
+* ~em rem~
+    * font-size에 맞춰서 크기 조정, rem은 root(html)의 font-size에 맞춤
