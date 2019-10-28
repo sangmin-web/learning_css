@@ -16,3 +16,6 @@ Learning CSS
 
 * ~em rem~
     * font-size에 맞춰서 크기 조정, rem은 root(html)의 font-size에 맞춤
+
+* ~vw vh vmax vmin~
+    * view-port에 맞춰서 크기 조정 vmax는 가로 세로중 큰걸로, vmin은 가로 세로중 작은걸로
